@@ -104,13 +104,12 @@ a {
 
 /* Hero */
 .hero {
-    padding-top: 56px;
+    padding: 56px 0 65px;
     background-color: #fffcf4;
 }
 
 .hero .body {
     display: flex;
-    padding-bottom: 65px;
 }
 
 .hero .media-block {
@@ -123,6 +122,7 @@ a {
     height: 685px;
     object-fit: cover;
     border-radius: 20px;
+    display: block;
 }
 
 .hero .hero-summary {
@@ -133,7 +133,7 @@ a {
     background: #fff;
     box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
     min-width: 270px;
-    padding: 28px 24px;
+    padding: 24px;
 }
 
 .hero-summary .item {
