@@ -408,3 +408,68 @@ a {
     background-color: var(--primary-color);
     color: #fff;
 }
+
+/** Feedback */
+.feedback {
+    margin-top: 135px;
+    padding: 96px 0;
+    background-color: #2e2100;
+}
+
+.feedback .feedback-item {
+    display: flex;
+    align-items: center;
+}
+
+.feedback-item .avatar {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 72px;
+    height: 72px;
+}
+
+.feedback-item .info .title {
+    color: #f7f7f7;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.4; /* 141.667% */
+    margin-top: 18px;
+}
+
+.feedback-item .info .desc {
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 1.85; /* 185.714% */
+}
+
+.feedback-item .dots {
+    display: flex;
+    margin-top: 28px;
+}
+
+.feedback-item .dot {
+    margin-right: 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #634700;
+    cursor: pointer;
+}
+
+.feedback-item .dot.active {
+    background-color: #ffb900;
+    cursor: default;
+}
+
+.feedback-item .content {
+    width: 66%;
+    margin-left: auto;
+}
+.feedback-item blockquote {
+    margin-left: 30px;
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 1.54; /* 153.846% */
+}
