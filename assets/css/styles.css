@@ -17,6 +17,17 @@ body {
 }
 
 /* Common */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    overflow: hidden;
+}
+
+.line-clamp.line2 {
+    --line-clamp: 2;
+}
+
 .heading {
     color: #171100;
     font-family: var(--font-heading);
@@ -36,6 +47,10 @@ body {
     min-width: 118px;
     line-height: 50px;
     cursor: pointer;
+}
+
+.break-all {
+    word-break: break-all;
 }
 
 .heading.lv1 {
@@ -355,11 +370,12 @@ a {
     line-height: 1.75; /* 175% */
 }
 
-.popular .course-item .title {
+.popular .course-item .title a {
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.66; /* 166.667% */
+    padding-right: 6px;
 }
 
 .popular .course-item .desc {
