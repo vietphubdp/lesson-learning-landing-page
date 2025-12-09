@@ -17,6 +17,13 @@ body {
 }
 
 /* Common */
+.main-content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 48px);
+}
+
 .line-clamp {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -69,13 +76,6 @@ body {
 
 a {
     text-decoration: none;
-}
-
-.main-content {
-    width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: calc(100% - 48px);
 }
 
 /* Header */
@@ -572,10 +572,12 @@ a {
     display: flex;
     gap: 30px;
     justify-content: center;
+    overflow: hidden;
 }
 
 .blog .item {
-    width: 33.33%;
+    flex-shrink: 0;
+    width: calc(33.3% - 20px);
     border-radius: 16px;
     background-color: #fff;
 }
@@ -635,8 +637,31 @@ a {
     display: inline-block;
     margin: 12px 0;
 }
+.blog .item .btn {
+    font-size: 1.4rem;
+}
 
 .blog .item .btn:hover {
     background-color: var(--primary-color);
     color: #fff;
+}
+
+.blog .dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 38px;
+}
+
+.blog .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #5f5b53;
+    cursor: pointer;
+}
+
+.blog .dot.active {
+    background-color: var(--primary-color);
+    cursor: default;
 }
